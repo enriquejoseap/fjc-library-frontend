@@ -1,11 +1,18 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import {
-  ENRIQUEJOSEAP,
   FUNDACIONJACINTOCONVIT,
   WEBSITEROUTES,
 } from "../config/routes";
-import { FaSquareFacebook , FaSquareXTwitter, FaSquareYoutube, FaLinkedin, FaSquareInstagram } from "react-icons/fa6";
+import {
+  FaSquareFacebook,
+  FaSquareXTwitter,
+  FaSquareYoutube,
+  FaLinkedin,
+  FaSquareInstagram,
+} from "react-icons/fa6";
+import { COLORS } from "../config/colors";
+import FooterCopyright from "./FooterCopyright";
 
 const Footer = () => {
   return (
@@ -21,17 +28,17 @@ const Footer = () => {
             <h5 className="footer-title">Información legal</h5>
             <ul>
               <li>
-                <Link className="link-light link" to={WEBSITEROUTES.CONDITIONS}>
+                <Link className="link-dark link" to={WEBSITEROUTES.CONDITIONS}>
                   Condiciones de uso
                 </Link>
               </li>
               <li>
-                <Link className="link-light link" to={WEBSITEROUTES.TERMS}>
+                <Link className="link-dark link" to={WEBSITEROUTES.TERMS}>
                   Términos y condiciones
                 </Link>
               </li>
               <li>
-                <Link className="link-light link" to={WEBSITEROUTES.PRIVACY}>
+                <Link className="link-dark link" to={WEBSITEROUTES.PRIVACY}>
                   Políticas de privacidad
                 </Link>
               </li>
@@ -43,7 +50,7 @@ const Footer = () => {
               <li>
                 Web:
                 <Link
-                  className="link-light link ps-1"
+                  className="link-dark link ps-1"
                   to={FUNDACIONJACINTOCONVIT.OFICIALPAGE}
                 >
                   {FUNDACIONJACINTOCONVIT.OFICIALPAGE.replace("https://", "")}
@@ -52,7 +59,7 @@ const Footer = () => {
               <li>
                 Email:
                 <Link
-                  className="link-light link ps-1"
+                  className="link-dark link ps-1"
                   to={`mailto:${FUNDACIONJACINTOCONVIT.EMAIL}`}
                 >
                   {FUNDACIONJACINTOCONVIT.EMAIL}
@@ -63,22 +70,22 @@ const Footer = () => {
           <Col className="pb-4" md>
             <h5 className="footer-title">Redes sociales</h5>
             <Container>
-              <Row>
+              <Row className="media-icons-row">
                 <Col>
                   <Link to={FUNDACIONJACINTOCONVIT.FACEBOOK}>
-                    <FaSquareFacebook size="2em" />
+                    <FaSquareFacebook size="2em" color={COLORS.WHITE} />
                   </Link>
                   <Link to={FUNDACIONJACINTOCONVIT.INSTAGRAM}>
-                    <FaFacebook size="2em" />
+                    <FaSquareInstagram size="2em" color={COLORS.WHITE} />
                   </Link>
                   <Link to={FUNDACIONJACINTOCONVIT.LINKEDIN}>
-                    <FaFacebook size="2em" />
+                    <FaLinkedin size="2em" color={COLORS.WHITE} />
                   </Link>
                   <Link to={FUNDACIONJACINTOCONVIT.TWITTER}>
-                    <FaFacebook size="2em" />
+                    <FaSquareXTwitter size="2em" color={COLORS.WHITE} />
                   </Link>
                   <Link to={FUNDACIONJACINTOCONVIT.YOUTUBE}>
-                    <FaFacebook size="2em" />
+                    <FaSquareYoutube size="2em" color={COLORS.WHITE} />
                   </Link>
                 </Col>
               </Row>
@@ -86,26 +93,7 @@ const Footer = () => {
           </Col>
         </Row>
         <hr />
-
-        <Row>
-          <Col className="copyright">
-            <span>
-              Fundación Jacinto Convit | RIF-j-40111708-2 © 2020 Todos los
-              derechos reservados
-            </span>
-            <br />
-            <span>
-              Diseñado y desarrollado por
-              <Link
-                className="link-light link ps-1"
-                to={ENRIQUEJOSEAP.INSTAGRAM}
-                target="_blank"
-              >
-                @enriquejoseap
-              </Link>
-            </span>
-          </Col>
-        </Row>
+        <FooterCopyright />
       </Container>
     </footer>
   );

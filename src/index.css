@@ -5,14 +5,121 @@
   --yellow: #fceec8;
   --blue: #20304c;
   --violet: #541355;
-  --black: #222222;
+  --dark: #222222;
+  --transparent: #ffffff00;
 }
 
-.link {
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.link-light,
+.link-dark {
   text-decoration: none;
 }
-.link:hover {
-  color: var(--black) !important;
+
+.link-light,
+.link-light > a {
+  color: var(--red) !important;
+}
+
+.link-light:hover,
+.link-light > a:hover {
+  color: var(--orange) !important;
+}
+
+.link-dark,
+.link-dark > a {
+  color: var(--white) !important;
+}
+
+.link-dark:hover,
+.link-dark > a:hover {
+  color: var(--yellow) !important;
+}
+
+.btn-primary {
+  background-color: var(--white);
+  color: var(--orange);
+  border: 2px solid var(--orange);
+  border-radius: 0px;
+}
+.btn-primary:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  border: 2px solid var(--orange);
+  border-radius: 0px;
+}
+
+/* Header */
+
+.nav-link{
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link, .navbar-nav .nav-item{
+  text-align: center;
+}
+
+.offcanvasNavbar-light.show {
+  background-color: var(--yellow) !important;
+}
+
+.website-navbar-light {
+  background-color: var(--yellow);
+  transition: all 0.3s ease;
+}
+
+.dropdown-list-light,
+.dropdown-list-dark {
+  list-style: none;
+  margin: 0;
+  padding: 1em 1em;
+}
+
+.dropdown-list-light {
+  background-color: var(--yellow);
+  transition: all 0.3s ease;
+}
+
+.dropdown-list-light a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+.dropdown-list-light a:hover {
+  color: var(--orange);
+}
+
+.offcanvasNavbar-dark.show {
+  background-color: var(--orange) !important;
+}
+
+.website-navbar-dark {
+  background-color: var(--orange);
+  transition: all 0.3s ease;
+}
+
+.dropdown-list-dark {
+  background-color: var(--orange);
+  transition: all 0.3s ease;
+}
+
+.dropdown-list-dark a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.dropdown-list-dark a:hover {
+  color: var(--yellow);
+}
+
+.dropdown-menu {
+  background-color: var(--transparent);
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  text-align: center;
 }
 
 /* Footer */
@@ -28,6 +135,21 @@ footer ul {
 
 .copyright {
   text-align: center;
+}
+
+.media-icons-row .col {
+  padding: 0;
+}
+
+.media-icons-row svg:hover {
+  color: var(--yellow) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-nav {
+    justify-content: center !important;
+    padding-right: calc(187px) !important;
+  }
 }
 
 @media screen and (max-width: 768px) {

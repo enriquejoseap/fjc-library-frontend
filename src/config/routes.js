@@ -1,5 +1,8 @@
 export const WEBSITEROUTES = {
   HOME: "/",
+  BIO: "/biografia",
+  CURRICULUM: "/curriculum-vitae",
+  TIMELINE: "linea-de-tiempo",
   SIGNIN: "/iniciar-sesion",
   SIGNUP: "/registrarse",
   CONTACT: "/contacto",
