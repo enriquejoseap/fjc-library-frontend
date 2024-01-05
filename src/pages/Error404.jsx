@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { COLORS } from "../config/colors";
-import { WEBSITEROUTES } from "../config/routes";
+import { COLORS } from "../assets/js/colors";
+import { WEBSITEROUTES } from "../assets/js/routes";
 
 const Error404 = () => {
   return (

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {
   FUNDACIONJACINTOCONVIT,
   WEBSITEROUTES,
-} from "../config/routes";
+} from "../assets/js/routes";
 import {
   FaSquareFacebook,
   FaSquareXTwitter,
@@ -11,7 +11,7 @@ import {
   FaLinkedin,
   FaSquareInstagram,
 } from "react-icons/fa6";
-import { COLORS } from "../config/colors";
+import { COLORS } from "../assets/js/colors";
 import FooterCopyright from "./FooterCopyright";
 
 const Footer = () => {
@@ -19,12 +19,12 @@ const Footer = () => {
     <footer className="p-3 text-light">
       <Container>
         <Row>
-          <Col className="pb-4 my-auto" md>
+          <Col className="pb-4 my-auto" sm={6} lg>
             <Link to={WEBSITEROUTES.HOME}>
               <img src="/icons/logo-light.png" alt="Fundacion Jacinto Convit" />
             </Link>
           </Col>
-          <Col className="pb-4" md>
+          <Col className="pb-4" sm={6} lg>
             <h5 className="footer-title">Información legal</h5>
             <ul>
               <li>
@@ -33,8 +33,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className="link-dark link" to={WEBSITEROUTES.TERMS}>
-                  Términos y condiciones
+                <Link className="link-dark link" to={WEBSITEROUTES.QUALITY}>
+                Política de Calidad
                 </Link>
               </li>
               <li>
@@ -44,7 +44,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col className="pb-4" md>
+          <Col className="pb-4" sm={6} lg>
             <h5 className="footer-title">Contacto</h5>
             <ul>
               <li>
@@ -67,7 +67,7 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col className="pb-4" md>
+          <Col className="pb-4" sm={6} lg>
             <h5 className="footer-title">Redes sociales</h5>
             <Container>
               <Row className="media-icons-row">

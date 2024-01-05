@@ -1,16 +1,13 @@
 import { Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { Link, NavLink } from "react-router-dom";
-import { WEBSITEROUTES } from "../config/routes";
-import { COLORS } from "../config/colors";
+import { Link } from "react-router-dom";
+import { WEBSITEROUTES } from "../assets/js/routes";
 import PropTypes from "prop-types";
-import BSHistoryDropdown from "./BSHistoryDropdown";
+import BSNavbarDropdown from "./BSNavbarDropdown";
+import { HISTORY, PUBLICATIONS } from "../assets/js/menu";
 
 function BSNavbar({ scrollTop }) {
   return (
@@ -22,7 +19,6 @@ function BSNavbar({ scrollTop }) {
             ? "website-navbar-light navbar-light"
             : "website-navbar-dark navbar-dark"
         }`}
-        fixed="top"
       >
         <Container fluid>
           <Navbar.Brand>
@@ -52,9 +48,6 @@ function BSNavbar({ scrollTop }) {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${"md"}`}>
-                {/* <span style={{ color: COLORS.RED }}>Biblioteca Digital</span>
-                <br />
-                <span style={{ color: COLORS.ORANGE }}>Jacinto Convit</span> */}
                 <Link to={WEBSITEROUTES.HOME}>
                   <img
                     height={"58px"}
@@ -71,9 +64,17 @@ function BSNavbar({ scrollTop }) {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-center flex-grow-1 pe-3">
-                <BSHistoryDropdown scrollTop={scrollTop} />
-                <Nav.Link href="#action1">Link</Nav.Link>
-                <Nav.Link href="#action2">Link</Nav.Link>
+                {/* Dropdowns */}
+                <BSNavbarDropdown
+                  scrollTop={scrollTop}
+                  title={HISTORY.title}
+                  items={HISTORY.items}
+                />
+                <BSNavbarDropdown
+                  scrollTop={scrollTop}
+                  title={PUBLICATIONS.title}
+                  items={PUBLICATIONS.items}
+                />
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

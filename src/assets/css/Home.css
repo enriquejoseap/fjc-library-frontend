@@ -1,0 +1,48 @@
+/* Hero */
+
+.hero-img {
+  min-width: 100%;
+  height: calc(100vh - 84px);
+  max-height: calc(900px);
+  object-fit: cover;
+  background-color: black;
+}
+
+.slide-content {
+  background-color: #00000070;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .hero-img {
+    object-position: -70vw;
+  }
+}
+
+/*  */
+
+.home-container {
+  background-image: url("/img/bg/home-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-img {
+  width: 100%;
+}
+
+.row {
+  row-gap: 1em;
+}
+
+/* Card section */
+
+.card{
+    margin: auto;
+}
+
+.bs-card-img{
+    height: 200px;
+    width: auto;
+    object-position: cover;
+}

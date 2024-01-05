@@ -13,6 +13,25 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+hr{
+  color: var(--red);
+  border-width: 2px;
+}
+
+/* Text */
+
+.text-primary {
+  color: var(--orange) !important;
+}
+
+.text-secondary {
+  color: var(--yellow) !important;
+}
+
+.text-terciary {
+  color: var(--red);
+}
+
 .link-light,
 .link-dark {
   text-decoration: none;
@@ -38,12 +57,15 @@ body {
   color: var(--yellow) !important;
 }
 
+/* Buttons */
+
 .btn-primary {
   background-color: var(--white);
   color: var(--orange);
   border: 2px solid var(--orange);
   border-radius: 0px;
 }
+
 .btn-primary:hover {
   background-color: var(--orange);
   color: var(--white);
@@ -51,17 +73,42 @@ body {
   border-radius: 0px;
 }
 
+.btn-secondary {
+  background-color: var(--transparent);
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 0px;
+}
+
+.btn-secondary:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  border: 2px solid var(--white);
+  border-radius: 0px;
+}
+
 /* Header */
 
-.nav-link{
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.navbar {
+  margin: 0 !important;
+}
+
+.nav-link {
   font-weight: 600;
 }
 
-.navbar-nav .nav-link, .navbar-nav .nav-item{
+.navbar-nav .nav-link,
+.navbar-nav .nav-item {
   text-align: center;
 }
 
-.offcanvasNavbar-light.show {
+.offcanvasNavbar-light {
   background-color: var(--yellow) !important;
 }
 
@@ -91,7 +138,7 @@ body {
   color: var(--orange);
 }
 
-.offcanvasNavbar-dark.show {
+.offcanvasNavbar-dark {
   background-color: var(--orange) !important;
 }
 

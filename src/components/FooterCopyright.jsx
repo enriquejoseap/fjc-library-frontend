@@ -1,6 +1,6 @@
 import { Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { ENRIQUEJOSEAP } from '../config/routes'
+import { ENRIQUEJOSEAP } from '../assets/js/routes'
 
 const FooterCopyright = () => {
   return (

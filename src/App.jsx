@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
-import { WEBSITEROUTES } from "./config/routes";
+import { WEBSITEROUTES } from "./assets/js/routes";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Home from "./pages/Home";
@@ -34,7 +34,7 @@ export default function App() {
     <>
       <BrowserRouter>
         {isAdminPath ? <AdminHeader /> : <Header scrollTop={scrollTop} />}
-        <main style={{paddingTop: "86px"}}>
+        <main>
           <Routes>
             <Route path={WEBSITEROUTES.HOME} element={<Home />} />
             <Route path={WEBSITEROUTES.SIGNIN} element={<Login />} />

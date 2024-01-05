@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { createContext, useState } from "react";
-import { WEBSITEROUTES } from "../config/routes";
+import { WEBSITEROUTES } from "../assets/js/routes";
 
 const UserContext = createContext();
 
