@@ -85,6 +85,42 @@ function Home() {
               />
             </Col>
           </Row>
+          <hr />
+        </Container>
+        <Container>
+          <Row className="justify-content-md-center py-5">
+            <Col sm={12} md={6}>
+              <h3 className="text-terciary">Descubre su visión del mundo</h3>
+              <p>
+                Adéntrate a la Caracas de antaño y descubre a un niño cazando
+                mariposas amarillas en La Pastora, acompáñalo en su travesía
+                desde Cabo Blanco hasta el Instituto de Biomedicina y conoce
+                todos sus aportes para la humanidad.
+                <br />
+                <br />
+                <q>
+                  <i>
+                    Yo creo que los sentimientos de amor hacia el ser humano van
+                    a estimular en él la vocación de servicio, que no es otra
+                    cosa que un profundo amor a la vida.
+                  </i>
+                </q>
+                <br />
+                <br />
+                -Dr. Jacinto Convit
+              </p>
+              <Link className="btn btn-primary" to={WEBSITEROUTES.REFLECTIONS}>
+                Leer biografía
+              </Link>
+            </Col>
+            <Col sm={12} md={6}>
+              <img
+                className="home-img"
+                src="/img/hero/home-lab.webp"
+                alt="Laboratorio"
+              />
+            </Col>
+          </Row>
         </Container>
       </section>
     </>

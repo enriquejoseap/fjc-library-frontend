@@ -7,6 +7,10 @@ export const HISTORY = {
     { title: "Currículum vitae", url: WEBSITEROUTES.CURRICULUM },
     { title: "Linea de tiempo", url: WEBSITEROUTES.TIMELINE },
   ],
+  icons: {
+    light: "/icons/bookmarklet-light.svg",
+    dark: "/icons/bookmarklet-dark.svg",
+  },
 };
 
 export const PUBLICATIONS = {
@@ -16,4 +20,8 @@ export const PUBLICATIONS = {
     { title: "Prensa", url: WEBSITEROUTES.NEWSPAPER },
     { title: "Reflexiones", url: WEBSITEROUTES.REFLECTIONS },
   ],
+  icons: {
+    light: "/icons/scroll-quill-light.svg",
+    dark: "/icons/scroll-quill-dark.svg",
+  },
 };

@@ -8,8 +8,12 @@ import { WEBSITEROUTES } from "../assets/js/routes";
 import PropTypes from "prop-types";
 import BSNavbarDropdown from "./BSNavbarDropdown";
 import { HISTORY, PUBLICATIONS } from "../assets/js/menu";
+import { useContext } from "react";
+import ScreenContext from "../context/ScreenContext";
 
-function BSNavbar({ scrollTop }) {
+function BSNavbar() {
+  const { scrollTop } = useContext(ScreenContext);
+
   return (
     <>
       <Navbar
@@ -69,11 +73,13 @@ function BSNavbar({ scrollTop }) {
                   scrollTop={scrollTop}
                   title={HISTORY.title}
                   items={HISTORY.items}
+                  icons={HISTORY.icons}
                 />
                 <BSNavbarDropdown
                   scrollTop={scrollTop}
                   title={PUBLICATIONS.title}
                   items={PUBLICATIONS.items}
+                  icons={PUBLICATIONS.icons}
                 />
               </Nav>
             </Offcanvas.Body>

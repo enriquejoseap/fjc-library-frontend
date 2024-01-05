@@ -1,11 +1,11 @@
 import BSNavbar from "./BSNavbar";
 import PropTypes from "prop-types";
 
-const Header = ({ scrollTop }) => {
+const Header = () => {
   return (
     <>
       <header>
-        <BSNavbar scrollTop={scrollTop} />
+        <BSNavbar/>
       </header>
     </>
   );

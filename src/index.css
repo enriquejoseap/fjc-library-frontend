@@ -13,7 +13,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-hr{
+hr {
   color: var(--red);
   border-width: 2px;
 }
@@ -93,10 +93,16 @@ header {
   position: sticky;
   top: 0;
   z-index: 1020;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .navbar {
   margin: 0 !important;
+}
+
+.nav-icon:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
 }
 
 .nav-link {
@@ -169,6 +175,37 @@ header {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .navbar-nav {
+    justify-content: center !important;
+    padding-right: calc(187px) !important;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .dropdown-list-dark,
+  .dropdown-list-light {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-top: 7px;
+  }
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.btn-close:focus {
+  border: none !important;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+  .dropdown-list-dark,
+  .dropdown-list-light {
+    padding-top: 0;
+  }
+}
+
 /* Footer */
 footer {
   background-color: var(--orange);
@@ -190,13 +227,6 @@ footer ul {
 
 .media-icons-row svg:hover {
   color: var(--yellow) !important;
-}
-
-@media screen and (min-width: 768px) {
-  .navbar-nav {
-    justify-content: center !important;
-    padding-right: calc(187px) !important;
-  }
 }
 
 @media screen and (max-width: 768px) {
