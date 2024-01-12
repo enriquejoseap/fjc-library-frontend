@@ -28,17 +28,17 @@ const Footer = () => {
             <h5 className="footer-title">Información legal</h5>
             <ul>
               <li>
-                <Link className="link-dark link" to={WEBSITEROUTES.CONDITIONS}>
+                <Link target="_blank" className="link-dark link" to={WEBSITEROUTES.CONDITIONS}>
                   Condiciones de uso
                 </Link>
               </li>
               <li>
-                <Link className="link-dark link" to={WEBSITEROUTES.QUALITY}>
+                <Link target="_blank" className="link-dark link" to={WEBSITEROUTES.QUALITY}>
                 Política de Calidad
                 </Link>
               </li>
               <li>
-                <Link className="link-dark link" to={WEBSITEROUTES.PRIVACY}>
+                <Link target="_blank" className="link-dark link" to={WEBSITEROUTES.PRIVACY}>
                   Políticas de privacidad
                 </Link>
               </li>
@@ -49,7 +49,7 @@ const Footer = () => {
             <ul>
               <li>
                 Web:
-                <Link
+                <Link target="_blank"
                   className="link-dark link ps-1"
                   to={FUNDACIONJACINTOCONVIT.OFICIALPAGE}
                 >
@@ -72,19 +72,19 @@ const Footer = () => {
             <Container>
               <Row className="media-icons-row">
                 <Col>
-                  <Link to={FUNDACIONJACINTOCONVIT.FACEBOOK}>
+                  <Link target="_blank" to={FUNDACIONJACINTOCONVIT.FACEBOOK}>
                     <FaSquareFacebook size="2em" color={COLORS.WHITE} />
                   </Link>
-                  <Link to={FUNDACIONJACINTOCONVIT.INSTAGRAM}>
+                  <Link target="_blank" to={FUNDACIONJACINTOCONVIT.INSTAGRAM}>
                     <FaSquareInstagram size="2em" color={COLORS.WHITE} />
                   </Link>
-                  <Link to={FUNDACIONJACINTOCONVIT.LINKEDIN}>
+                  <Link target="_blank" to={FUNDACIONJACINTOCONVIT.LINKEDIN}>
                     <FaLinkedin size="2em" color={COLORS.WHITE} />
                   </Link>
-                  <Link to={FUNDACIONJACINTOCONVIT.TWITTER}>
+                  <Link target="_blank" to={FUNDACIONJACINTOCONVIT.TWITTER}>
                     <FaSquareXTwitter size="2em" color={COLORS.WHITE} />
                   </Link>
-                  <Link to={FUNDACIONJACINTOCONVIT.YOUTUBE}>
+                  <Link target="_blank" to={FUNDACIONJACINTOCONVIT.YOUTUBE}>
                     <FaSquareYoutube size="2em" color={COLORS.WHITE} />
                   </Link>
                 </Col>

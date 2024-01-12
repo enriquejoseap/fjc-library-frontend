@@ -20,6 +20,10 @@ hr {
 
 /* Text */
 
+h1, h2, h3, h4, h5, h6{
+  font-weight: 600;
+}
+
 .text-primary {
   color: var(--orange) !important;
 }
@@ -85,6 +89,22 @@ hr {
   color: var(--orange);
   border: 2px solid var(--white);
   border-radius: 0px;
+}
+
+/* Heading */
+
+.heading-pages{
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 100% 10%;
+  border-bottom: 7px solid var(--orange);
+}
+
+.heading-pages h1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  color: var(--white);
 }
 
 /* Header */
@@ -209,6 +229,8 @@ header {
 /* Footer */
 footer {
   background-color: var(--orange);
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 footer ul {

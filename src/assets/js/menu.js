@@ -3,7 +3,7 @@ import { WEBSITEROUTES } from "./routes";
 export const HISTORY = {
   title: "Historia",
   items: [
-    { title: "Biografa", url: WEBSITEROUTES.BIO },
+    { title: "Biografía", url: WEBSITEROUTES.BIO },
     { title: "Currículum vitae", url: WEBSITEROUTES.CURRICULUM },
     { title: "Linea de tiempo", url: WEBSITEROUTES.TIMELINE },
   ],

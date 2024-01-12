@@ -13,6 +13,10 @@
   padding: 1rem;
 }
 
+.home-hero{
+  border-bottom: 7px solid var(--orange);
+}
+
 @media screen and (max-width: 576px) {
   .hero-img {
     object-position: -70vw;
@@ -21,8 +25,8 @@
 
 /*  */
 
-.home-container {
-  background-image: url("/img/bg/home-bg.webp");
+.home-main-section,
+.home-last-section {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -37,12 +41,13 @@
 
 /* Card section */
 
-.card{
-    margin: auto;
+.card {
+  margin: auto;
+  border-radius: 0;
 }
 
-.bs-card-img{
-    height: 200px;
-    width: auto;
-    object-position: cover;
+.bs-card-img {
+  height: 200px;
+  width: auto;
+  object-position: cover;
 }

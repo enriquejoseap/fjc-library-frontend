@@ -24,6 +24,7 @@ export const ENRIQUEJOSEAP = {
 
 export const FUNDACIONJACINTOCONVIT = {
   OFICIALPAGE: "https://www.jacintoconvit.org.ve",
+  INTERNATIONAL: "https://www.jacintoconvit.org/",
   FACEBOOK: "https://www.facebook.com/fundacionjacintoconvit/",
   INSTAGRAM: "https://www.instagram.com/JacintoConvit/",
   LINKEDIN: "https://ve.linkedin.com/company/fundaci%C3%B3n-jacinto-convit",

@@ -1,6 +1,5 @@
 import { createContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { propTypes } from "react-bootstrap/esm/Image";
 
 const ScreenContext = createContext();
 
