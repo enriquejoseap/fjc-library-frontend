@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import {
   FUNDACIONJACINTOCONVIT,
   WEBSITEROUTES,
-} from "../assets/js/routes";
+} from "../routes/routes";
 import {
   FaSquareFacebook,
   FaSquareXTwitter,
@@ -11,7 +11,7 @@ import {
   FaLinkedin,
   FaSquareInstagram,
 } from "react-icons/fa6";
-import { COLORS } from "../assets/js/colors";
+import { COLORS } from "../utils/colors";
 import FooterCopyright from "./FooterCopyright";
 
 const Footer = () => {

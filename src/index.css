@@ -13,6 +13,16 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container-box, .row.container-box{
+  margin: 0;
+  max-width: 100%;
+}
+
+.container-box .row, .row.container-box{
+  max-width: 1080px;
+  margin: auto;
+}
+
 hr {
   color: var(--red);
   border-width: 2px;

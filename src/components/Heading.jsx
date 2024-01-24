@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
-const styles = { backgroundImage: "url('/img/bg/istockphoto-516378717-612x612.webp')" };
+const styles = { backgroundImage: "url('/img/bg/heading-bg.webp')" };
 
 const Heading = ({ pageTitle }) => {
   return (

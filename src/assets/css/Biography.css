@@ -1,0 +1,95 @@
+:root {
+  --orange: #e67634;
+  --white: #ffffff;
+  --red: #98221f;
+  --yellow: #fceec8;
+  --blue: #20304c;
+  --violet: #541355;
+  --dark: #222222;
+  --transparent: #ffffff00;
+}
+
+.biography-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/bg/present-bio.webp");
+  background-size: cover;
+  backdrop-filter: brightness(10%);
+  background-position-x: center;
+}
+
+.biography-page .row-heading {
+  max-width: 720px;
+  margin: auto;
+}
+
+/* Tabs */
+
+.biography-page .nav-justified {
+  margin-bottom: 2em;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid var(--orange);
+}
+
+.biography-page .nav-link {
+  color: var(--yellow);
+  transition: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 3px solid var(--yellow) !important;
+  min-width: max-content !important;
+}
+
+.biography-page .nav-link:hover,
+.biography-page .nav-link.active {
+  color: var(--orange) !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 3px solid var(--orange) !important;
+  background: none !important;
+}
+
+.biography-page .nav-item {
+  margin: 0 2em 2em 2em;
+}
+
+.biography-page .tab-content {
+  color: var(--white);
+  margin-bottom: 4em;
+}
+
+.biography-page figure {
+  margin: auto;
+  border: 2px solid var(--orange);
+}
+
+.biography-page .tab-img {
+  width: 100%;
+  position: relative;
+  filter: brightness(0.5);
+  max-width: 450px;
+}
+
+.biography-page .col-text {
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+@media (width >= 768px) {
+  .biography-page {
+    padding: 0 5em !important;
+  }
+  .biography-page .tab-content .col {
+    min-width: 50%;
+  }
+}
+
+@media (width < 768px) {
+  .biography-page .nav-item {
+    width: 100% !important;
+    flex-basis: auto !important;
+  }
+}

@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useContext } from "react";
-import { WEBSITEROUTES } from "./assets/js/routes";
+import { WEBSITEROUTES } from "./routes/routes";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Home from "./pages/Home";
@@ -15,6 +15,8 @@ import Header from "./components/Header";
 import AdminHeader from "./admin/components/AdminHeader";
 import { ScreenProvider } from "./context/ScreenContext";
 import TimeLine from "./pages/TimeLine";
+import Biography from "./pages/Biography";
+import Curriculum from "./pages/Curriculum";
 
 export default function App() {
   const { user, handleAuthRedirect } = useContext(UserContext);
@@ -30,7 +32,9 @@ export default function App() {
           <main>
             <Routes>
               <Route path={WEBSITEROUTES.HOME} element={<Home />} />
+              <Route path={WEBSITEROUTES.BIO} element={<Biography />} />
               <Route path={WEBSITEROUTES.TIMELINE} element={<TimeLine />} />
+              <Route path={WEBSITEROUTES.CURRICULUM} element={<Curriculum />} />
               <Route path={WEBSITEROUTES.SIGNIN} element={<Login />} />
               <Route path={WEBSITEROUTES.SIGNUP} element={<SignUp />} />
               <Route

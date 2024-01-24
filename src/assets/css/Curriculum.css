@@ -1,0 +1,82 @@
+:root {
+  --orange: #e67634;
+  --white: #ffffff;
+  --red: #98221f;
+  --yellow: #fceec8;
+  --blue: #20304c;
+  --violet: #541355;
+  --dark: #222222;
+  --transparent: #ffffff00;
+}
+
+.main-content{
+    background-image: url("/img/bg/home-bg.webp");
+    background-size: cover;
+}
+
+.curriculum-page .row-heading {
+  max-width: 720px;
+  margin: auto;
+}
+
+.curriculum-page .jc-main-img {
+  max-width: 300px;
+  width: 100%;
+}
+
+.curriculum-page table th {
+  background-color: var(--orange);
+  color: var(--yellow);
+}
+
+.curriculum-page table td {
+  background-color: #ffffff90;
+}
+
+/* Searcher */
+
+.curriculum-wiki .filter-col {
+  border: 1px solid var(--orange);
+  background-color:  #ffffff80;
+}
+
+.curriculum-wiki .wiki-content-col {
+  background-image: url("/img/bg/scroll-bg.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 20% 0;
+}
+
+.curriculum-wiki .wiki-content-col div {
+  max-height: 500px;
+  overflow-y: scroll;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+/* Media Query */
+
+@media (width < 768px) {
+  .curriculum-page table {
+    font-size: 0.7em;
+  }
+  .curriculum-page .table-col {
+    overflow-x: scroll;
+  }
+  .curriculum-wiki .wiki-content-col {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+  .curriculum-wiki .wiki-content-col div {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+}
+
+@media (width >= 768px) {
+  .curriculum-page {
+    padding: 0 5em !important;
+  }
+}

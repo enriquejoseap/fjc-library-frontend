@@ -1,4 +1,4 @@
-import { WEBSITEROUTES } from "./routes";
+import { WEBSITEROUTES } from "../routes/routes";
 
 export const HISTORY = {
   title: "Historia",

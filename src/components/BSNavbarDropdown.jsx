@@ -1,5 +1,5 @@
 import { NavDropdown } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import { useContext } from "react";
 import ScreenContext from "../context/ScreenContext";
@@ -31,6 +31,22 @@ const BSNavbarDropdown = ({ scrollTop, title, items, icons }) => {
           scrollTop > 0 ? "dropdown-list-light" : "dropdown-list-dark"
         }`}
       >
+        {screenWidth >= 768 && (
+          <>
+            <li
+              className={`${scrollTop > 0 ? "text-primary" : "text-secondary"}`}
+            >
+              <span>
+                <b>{title}</b>
+              </span>
+            </li>
+          </>
+        )}
+        <hr
+          className={`${scrollTop > 0 ? "text-primary" : "text-secondary"}`}
+          style={{ margin: "4px 0" }}
+        />
+
         {items.map((item, index) => {
           return (
             <li key={index}>

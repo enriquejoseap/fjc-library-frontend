@@ -4,10 +4,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
-import { WEBSITEROUTES } from "../assets/js/routes";
+import { WEBSITEROUTES } from "../routes/routes";
 import PropTypes from "prop-types";
 import BSNavbarDropdown from "./BSNavbarDropdown";
-import { HISTORY, PUBLICATIONS } from "../assets/js/menu";
+import { HISTORY, PUBLICATIONS } from "../utils/menu";
 import { useContext } from "react";
 import ScreenContext from "../context/ScreenContext";
 

@@ -1,8 +1,8 @@
-import HomeCarousel from "../components/HomeCarousel";
+import HomeCarousel from "../components/Home/HomeCarousel";
 import "../assets/css/Home.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { FUNDACIONJACINTOCONVIT, WEBSITEROUTES } from "../assets/js/routes";
+import { FUNDACIONJACINTOCONVIT, WEBSITEROUTES } from "../routes/routes";
 import BSCard from "../components/BSCard";
 
 const styles = {
