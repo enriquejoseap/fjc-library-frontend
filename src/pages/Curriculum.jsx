@@ -129,14 +129,14 @@ const Curriculum = () => {
             </Col>
           </Row>
         </Container>
-        <CurriculumSearcher
-          timeFilters={timeFilters}
-          categoriesFilters={categoriesFilters}
-          curriculum={curriculum}
-          filters={filters}
-          handleCheck={handleCheck}
-        />
       </div>
+      <CurriculumSearcher
+        timeFilters={timeFilters}
+        categoriesFilters={categoriesFilters}
+        curriculum={curriculum}
+        filters={filters}
+        handleCheck={handleCheck}
+      />
     </>
   );
 };

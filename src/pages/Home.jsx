@@ -60,7 +60,7 @@ function Home() {
         <Container>
           <Row className="pt-3 pb-3 text-center">
             <Col>
-              <h3 className="text-terciary">Aprende de sus publicaciones</h3>
+              <h3 className="text-terciary">Aprende de sus publicaciones...</h3>
               <p>
                 Conoce su filosofía científica y visionaria que acumula más de
                 setenta años de trabajos y noticias sobre él..
@@ -74,6 +74,7 @@ function Home() {
                 img="/img/home/home-ciencia.webp"
                 paragraph="Investigaciones que han ayudado a salvar vidas"
                 buttonText="Leer publicaciones científicas"
+                url={WEBSITEROUTES.RESEARCH}
               />
             </Col>
             <Col>

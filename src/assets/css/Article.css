@@ -1,0 +1,97 @@
+:root {
+  --orange: #e67634;
+  --white: #ffffff;
+  --red: #98221f;
+  --yellow: #fceec8;
+  --blue: #20304c;
+  --violet: #541355;
+  --dark: #222222;
+  --transparent: #ffffff00;
+}
+
+.document-searcher {
+  justify-content: center;
+}
+
+.document-searcher input {
+  border-radius: 0%;
+  max-width: 300px;
+  margin-right: 5px;
+}
+
+.document-searcher input:focus {
+  box-shadow: none;
+  border-color: var(--orange);
+}
+
+/* Article */
+
+.article-image {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.article-link {
+  text-decoration: none;
+}
+
+.article-link article {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.article-card img {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.article-link article:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
+.article-link article:hover h4 {
+  color: var(--red) !important;
+}
+
+.article-name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Pagination */
+
+.pagination a {
+  border-radius: 0px !important;
+}
+
+.pagination li {
+  cursor: pointer;
+}
+
+.pagination li.disabled {
+  cursor: default;
+}
+
+.pagination li.active a {
+  background-color: var(--orange);
+  border-color: var(--red) !important;
+}
+
+.pagination li a {
+  color: var(--orange);
+}
+
+.pagination li a:hover {
+  color: var(--red);
+}
+
+/* Details page */
+
+.detail-arrow-next {
+  text-decoration: none;
+  margin-left: 10px !important;
+}
+
+.detail-arrow-prev {
+  text-decoration: none;
+  margin-right: 10px !important;
+}

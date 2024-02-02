@@ -15,9 +15,9 @@ const Error404 = () => {
             <hr />
             <p className="fs-3">
               {" "}
-              <span style={{ color: COLORS.RED }}>Opps!</span> Page not found.
+              <span style={{ color: COLORS.RED }}>Opps!</span> No se encontró la página.
             </p>
-            <p className="lead">The page you’re looking for doesn’t exist.</p>
+            <p className="lead">Parece que la página que estás buscando no existe.</p>
             <Link className="btn btn-primary" to={WEBSITEROUTES.HOME}>
               Ir a Inicio
             </Link>

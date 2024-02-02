@@ -17,6 +17,9 @@ import { ScreenProvider } from "./context/ScreenContext";
 import TimeLine from "./pages/TimeLine";
 import Biography from "./pages/Biography";
 import Curriculum from "./pages/Curriculum";
+import Research from "./pages/Research";
+import Article from "./pages/ArticleDetails";
+import Donations from "./pages/Donations";
 
 export default function App() {
   const { user, handleAuthRedirect } = useContext(UserContext);
@@ -35,6 +38,12 @@ export default function App() {
               <Route path={WEBSITEROUTES.BIO} element={<Biography />} />
               <Route path={WEBSITEROUTES.TIMELINE} element={<TimeLine />} />
               <Route path={WEBSITEROUTES.CURRICULUM} element={<Curriculum />} />
+              <Route path={WEBSITEROUTES.RESEARCH} element={<Research />} />
+              <Route path={WEBSITEROUTES.DONATIONS} element={<Donations />} />
+              <Route
+                path={`${WEBSITEROUTES.RESEARCH}/:id`}
+                element={<Article />}
+              />
               <Route path={WEBSITEROUTES.SIGNIN} element={<Login />} />
               <Route path={WEBSITEROUTES.SIGNUP} element={<SignUp />} />
               <Route
@@ -43,10 +52,14 @@ export default function App() {
               />
 
               {/* Rutas privadas */}
-              <Route
-                path={WEBSITEROUTES.ADMIN.DASHBOARD}
-                element={<PrivateComponent component={Dashboard} />}
-              />
+              {user.role == "admin" && (
+                <>
+                  <Route
+                    path={WEBSITEROUTES.ADMIN.DASHBOARD}
+                    element={<PrivateComponent component={Dashboard} />}
+                  />
+                </>
+              )}
 
               {/* 404 */}
               <Route path={WEBSITEROUTES.ERROR404} element={<Error404 />} />

@@ -7,12 +7,20 @@ import { Link } from "react-router-dom";
 import { WEBSITEROUTES } from "../routes/routes";
 import PropTypes from "prop-types";
 import BSNavbarDropdown from "./BSNavbarDropdown";
-import { HISTORY, PUBLICATIONS } from "../utils/menu";
-import { useContext } from "react";
+import { HISTORY, LIBRARIAN, NAVLINKS, PUBLICATIONS } from "../utils/menu";
+import { useContext, useState } from "react";
 import ScreenContext from "../context/ScreenContext";
+import BSNavbarLink from "./BSNavbarLink";
+import UserContext from "../context/UserContext";
 
 function BSNavbar() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const { scrollTop } = useContext(ScreenContext);
+  const { user } = useContext(UserContext);
 
   return (
     <>
@@ -69,6 +77,7 @@ function BSNavbar() {
             <Offcanvas.Body>
               <Nav className="justify-content-center flex-grow-1 pe-3">
                 {/* Dropdowns */}
+
                 <BSNavbarDropdown
                   scrollTop={scrollTop}
                   title={HISTORY.title}
@@ -81,6 +90,32 @@ function BSNavbar() {
                   items={PUBLICATIONS.items}
                   icons={PUBLICATIONS.icons}
                 />
+
+                {/* Links */}
+
+                <BSNavbarLink
+                  scrollTop={scrollTop}
+                  title={NAVLINKS.donations.title}
+                  url={NAVLINKS.donations.url}
+                  icons={NAVLINKS.donations.icons}
+                  targetBlank={false}
+                />
+                <BSNavbarLink
+                  scrollTop={scrollTop}
+                  title={NAVLINKS.librarian.title}
+                  url={NAVLINKS.librarian.url}
+                  icons={NAVLINKS.librarian.icons}
+                  targetBlank={true}
+                />
+                {user.role == "admin" && (
+                  <BSNavbarLink
+                    scrollTop={scrollTop}
+                    title={NAVLINKS.admin.title}
+                    url={NAVLINKS.admin.url}
+                    icons={NAVLINKS.admin.icons}
+                    targetBlank={false}
+                  />
+                )}
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

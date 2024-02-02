@@ -12,9 +12,8 @@ const CurriculumSearcher = ({
   return (
     <Container className="curriculum-wiki" fluid>
       <Row className="py-4 text-center row-heading ">
-        <hr />
         <Col>
-          <h3 className="text-terciary">Contenido del curriculum</h3>
+          <h3 className="text-secondary">Contenido del currículum</h3>
         </Col>
       </Row>
       <Row className="container-box">

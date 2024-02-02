@@ -78,13 +78,24 @@ h1, h2, h3, h4, h5, h6{
   color: var(--orange);
   border: 2px solid var(--orange);
   border-radius: 0px;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: var(--orange);
+  background-color: var(--orange) !important;
   color: var(--white);
-  border: 2px solid var(--orange);
+  border: 2px solid var(--orange) !important;
   border-radius: 0px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:active {
+  background-color: var(--orange) !important;
+  color: var(--white);
+  border: 2px solid var(--orange) !important;
+  border-radius: 0px;
+  transform: scale(1.08) !important;
+  transition: all 0.1s ease;
 }
 
 .btn-secondary {

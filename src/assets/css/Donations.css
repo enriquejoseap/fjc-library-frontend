@@ -1,0 +1,21 @@
+.donation-heading{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/img/bg/donations.webp") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 7px solid #e67634;
+}
+
+.donation-heading h2{
+    font-size: 4.5em;
+}
+
+@media (width < 1024px){
+    .donation-heading h2{
+        text-align: center;
+        font-size: 3em;
+    }
+}

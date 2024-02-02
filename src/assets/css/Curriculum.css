@@ -35,6 +35,12 @@
 
 /* Searcher */
 
+.curriculum-wiki{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/img/bg/present-bio-3.webp") !important;
+  backdrop-filter: brightness(10%) !important;
+  border-top: 7px solid #e67634;
+}
+
 .curriculum-wiki .filter-col {
   border: 1px solid var(--orange);
   background-color:  #ffffff80;

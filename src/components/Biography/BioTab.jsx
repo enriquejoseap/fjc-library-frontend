@@ -13,7 +13,7 @@ const BioTab = () => {
             <Nav className="flex-row" justify>
               {tabContent.map((tab, index) => (
                 <Nav.Item key={index}>
-                  <Nav.Link href={`${WEBSITEROUTES.BIO}#${tab.title}`} eventKey={tab.title}>{tab.title}</Nav.Link>
+                  <Nav.Link eventKey={tab.title}>{tab.title}</Nav.Link>
                 </Nav.Item>
               ))}
             </Nav>

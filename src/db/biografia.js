@@ -22,7 +22,7 @@ export const tabContent = [
     image: "/img/bio/infancia-1.webp",
   },
   {
-    title: "Formacion",
+    title: "Formación",
     subtitle: "",
     content: `El joven Jacinto cursa sus estudios de primaria en el Colegio San Pablo de Caracas, bajo la dirección de los hermanos Roberto y Raimundo Centeno, insignes educadores de la época. La escuela tiene un ambiente familiar donde se recalca la importancia de los valores y las buenas costumbres.
 
@@ -396,7 +396,7 @@ export const tabContent = [
     image: "/img/bio/image-011.webp",
   },
   {
-    title: "Innovacion audiovisual",
+    title: "Innovación audiovisual",
     subtitle: "",
     content: `“El desarrollo de un país depende de la ciencia. Por eso es que nosotros estamos subdesarrollados. Porque a nuestra ciencia, en verdad, no se le ha dado el empuje que debe tener, aunque se ha hecho un esfuerzo”
 
@@ -414,7 +414,7 @@ export const tabContent = [
     image: "/img/bio/image-012.webp",
   },
   {
-    title: "Estudios del cancer",
+    title: "Estudios del cáncer",
     subtitle: "",
     content: `“La muerte es algo que uno tiene que aceptar. Nadie se puede salvar de morir. Es decir, la muerte no es discutible. Ahora lo que hay que hacer es aprovechar el tiempo y hacer las cosas lo mejor posible. Tratar de favorecer a la gente lo más que se pueda. Por eso pasé de mi trabajo en lepra y leishmaniasis, a cáncer”
 
