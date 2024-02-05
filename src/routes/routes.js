@@ -16,6 +16,8 @@ export const WEBSITEROUTES = {
   PRIVACY: "https://www.jacintoconvit.org.ve/es/privacidad/",
   ADMIN: {
     DASHBOARD: "/admin",
+    RESEARCH: "/admin/investigaciones",
+    USER: "/admin/usuarios"
   },
   ERROR404: "*",
 };

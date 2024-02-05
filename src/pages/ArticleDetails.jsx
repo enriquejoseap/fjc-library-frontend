@@ -22,15 +22,14 @@ const ArticleDetails = () => {
 
   return (
     <>
-      <div style={{backgroundColor: "#f7f4f2"}}>
+      <div style={{ backgroundColor: "#f7f4f2", minHeight: "100vh" }}>
         <Container>
           <Row className="py-4">
             <Col xs={5}>
               <Link to={`/${mainLocation}`}>
                 {" "}
                 <Button>
-                  <GiSideswipe /> {" "}
-                  Volver
+                  <GiSideswipe /> Volver
                 </Button>
               </Link>
             </Col>
@@ -78,7 +77,10 @@ const ArticleDetails = () => {
                   <b>Extracto:</b> <q>{article.abstract}</q>
                 </p>
               </div>
-              <Button href={article.pdf} target="_blank">Leer PDF</Button>
+              <Button className="me-3" href={article.pdf} target="_blank">
+                Leer PDF
+              </Button>
+              <Button href="#" >Compartir</Button>
             </Col>
           </Row>
         </Container>

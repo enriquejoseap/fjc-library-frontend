@@ -1,0 +1,34 @@
+.admin-navbar {
+  background-color: #222222 !important;
+}
+
+.border-md-left {
+  border-left: 1px solid silver;
+}
+
+@media (max-width: 768px) {
+  .border-md-left {
+    border-left: none;
+  }
+}
+
+/* Dashboard */
+
+.admin-hello {
+  color: #e67634;
+}
+
+.admin-dashboard-page {
+  background-color: #f7f4f2;
+}
+
+.admin-dashboard-page img {
+  border: 3px solid #e67634;
+}
+
+/* Table */
+
+.container-table{
+    max-height: 600px;
+    overflow-y: scroll;
+}

@@ -9,21 +9,24 @@ const slides = [
     paragraph: "A través de nuestra biblioteca digital",
     img: "/img/home/home-prensa.webp",
     buttonText: "Ir a Biografía",
+    url: WEBSITEROUTES.BIO,
+  },
+  {
+    title: "Aprende de su trayecto a través del",
+    subtitle: "Bibliotecario",
+    paragraph: "Hazle cualquier consulta!",
+    img: "/img/home/Jacinto Convit,  (97 años).jpg",
+    buttonText: "Ir al Bibliotecario",
+    url: "http://localhost:8000/",
   },
   {
     title: "Conoce al insigne científico y humanista",
     subtitle: "Dr. Jacinto Convit",
     paragraph: "A través de nuestra biblioteca digital",
-    img: "/img/home/home-jacinto.webp",
-    buttonText: "Ir a Biografía",
-  },
-  {
-    title: "Conoce al insigne científico y humanista",
-    subtitle: "Dr. Jacinto Convit",
-    paragraph: "A través de nuestra biblioteca digital",
-    img: "/img/home/home-lab.webp",
+    img: "/img/home/10001.png",
     imgAlt: "Jacinto Convit",
-    buttonText: "Ir a Biografía",
+    buttonText: "Ir a Investigaciones",
+    url: WEBSITEROUTES.RESEARCH,
   },
 ];
 

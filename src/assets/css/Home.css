@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 576px) {
   .hero-img {
-    object-position: -70vw;
+    object-position: -30vw;
   }
 }
 

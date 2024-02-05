@@ -20,6 +20,8 @@ import Curriculum from "./pages/Curriculum";
 import Research from "./pages/Research";
 import Article from "./pages/ArticleDetails";
 import Donations from "./pages/Donations";
+import AdminResearch from "./admin/pages/AdminResearch";
+import AdminUsers from "./admin/pages/AdminUsers";
 
 export default function App() {
   const { user, handleAuthRedirect } = useContext(UserContext);
@@ -56,7 +58,15 @@ export default function App() {
                 <>
                   <Route
                     path={WEBSITEROUTES.ADMIN.DASHBOARD}
-                    element={<PrivateComponent component={Dashboard} />}
+                    element={<Dashboard />}
+                  />
+                  <Route
+                    path={WEBSITEROUTES.ADMIN.RESEARCH}
+                    element={<AdminResearch />}
+                  />
+                  <Route
+                    path={WEBSITEROUTES.ADMIN.USER}
+                    element={<AdminUsers />}
                   />
                 </>
               )}

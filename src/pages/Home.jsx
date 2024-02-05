@@ -50,14 +50,14 @@ function Home() {
                 <br />
                 -Dr. Jacinto Convit
               </p>
-              <Link className="btn btn-primary" to={WEBSITEROUTES.REFLECTIONS}>
+              <Link className="btn btn-primary" to={WEBSITEROUTES.BIO}>
                 Leer biografía
               </Link>
             </Col>
           </Row>
           <hr />
         </Container>
-        <Container>
+        {/* <Container>
           <Row className="pt-3 pb-3 text-center">
             <Col>
               <h3 className="text-terciary">Aprende de sus publicaciones...</h3>
@@ -95,7 +95,7 @@ function Home() {
             </Col>
           </Row>
           <hr />
-        </Container>
+        </Container> */}
         <Container>
           <Row className="justify-content-md-center py-5">
             <Col sm={12} md={6}>
@@ -110,7 +110,7 @@ function Home() {
                 <br />
                 <br />
               </p>
-              <Link className="btn btn-primary" to={WEBSITEROUTES.REFLECTIONS}>
+              <Link className="btn btn-primary" to={WEBSITEROUTES.RESEARCH}>
                 Leer investigaciones
               </Link>
             </Col>

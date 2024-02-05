@@ -17,8 +17,6 @@ export const PUBLICATIONS = {
   title: "Publicaciones",
   items: [
     { title: "Investigaciones", url: WEBSITEROUTES.RESEARCH },
-    { title: "Prensa", url: WEBSITEROUTES.NEWSPAPER },
-    { title: "Reflexiones", url: WEBSITEROUTES.REFLECTIONS },
   ],
   icons: {
     light: "/icons/scroll-quill-light.svg",

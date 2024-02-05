@@ -113,7 +113,7 @@ function BSNavbar() {
                     title={NAVLINKS.admin.title}
                     url={NAVLINKS.admin.url}
                     icons={NAVLINKS.admin.icons}
-                    targetBlank={false}
+                    targetBlank={true}
                   />
                 )}
               </Nav>

@@ -4,7 +4,7 @@ import { WEBSITEROUTES } from "../routes/routes";
 
 const UserContext = createContext();
 
-const initialAuth = { name: null, email: null, role: "admin" };
+const initialAuth = { name: "Enrique", email: null, role: "admin" };
 
 export const UserProvider = (props) => {
   const [user, setUser] = useState(initialAuth);

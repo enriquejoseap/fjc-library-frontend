@@ -11,6 +11,11 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+main{
+  min-height: 100vh !important;
 }
 
 .container-box, .row.container-box{

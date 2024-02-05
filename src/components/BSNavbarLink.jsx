@@ -7,7 +7,7 @@ const BSNavbarLink = ({ scrollTop, title, url, icons, targetBlank }) => {
 
   return (
     <>
-      <div className="link-dark nav-item">
+      <div className={`nav-item ${scrollTop > 0 ? "link-light" : "link-dark"}`}>
         <Link
           className="nav-link"
           target={targetBlank ? "_blank" : "_self"}
