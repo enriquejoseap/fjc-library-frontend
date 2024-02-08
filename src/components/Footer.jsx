@@ -1,15 +1,12 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { FUNDACIONJACINTOCONVIT, WEBSITEROUTES } from "../routes/routes";
 import {
-  FUNDACIONJACINTOCONVIT,
-  WEBSITEROUTES,
-} from "../routes/routes";
-import {
-  FaSquareFacebook,
-  FaSquareXTwitter,
-  FaSquareYoutube,
+  FaFacebook,
+  FaXTwitter,
+  FaInstagram,
   FaLinkedin,
-  FaSquareInstagram,
+  FaYoutube,
 } from "react-icons/fa6";
 import { COLORS } from "../utils/colors";
 import FooterCopyright from "./FooterCopyright";
@@ -28,17 +25,29 @@ const Footer = () => {
             <h5 className="footer-title">Información legal</h5>
             <ul>
               <li>
-                <Link target="_blank" className="link-dark link" to={WEBSITEROUTES.CONDITIONS}>
+                <Link
+                  target="_blank"
+                  className="link-dark link"
+                  to={WEBSITEROUTES.CONDITIONS}
+                >
                   Condiciones de uso
                 </Link>
               </li>
               <li>
-                <Link target="_blank" className="link-dark link" to={WEBSITEROUTES.QUALITY}>
-                Política de Calidad
+                <Link
+                  target="_blank"
+                  className="link-dark link"
+                  to={WEBSITEROUTES.QUALITY}
+                >
+                  Política de Calidad
                 </Link>
               </li>
               <li>
-                <Link target="_blank" className="link-dark link" to={WEBSITEROUTES.PRIVACY}>
+                <Link
+                  target="_blank"
+                  className="link-dark link"
+                  to={WEBSITEROUTES.PRIVACY}
+                >
                   Políticas de privacidad
                 </Link>
               </li>
@@ -49,7 +58,8 @@ const Footer = () => {
             <ul>
               <li>
                 Web:
-                <Link target="_blank"
+                <Link
+                  target="_blank"
                   className="link-dark link ps-1"
                   to={FUNDACIONJACINTOCONVIT.OFICIALPAGE}
                 >
@@ -72,21 +82,35 @@ const Footer = () => {
             <Container>
               <Row className="media-icons-row">
                 <Col>
+                  <div className="media-icon-container">
+
                   <Link target="_blank" to={FUNDACIONJACINTOCONVIT.FACEBOOK}>
-                    <FaSquareFacebook size="2em" color={COLORS.WHITE} />
+                    <FaFacebook size="1.8em" color={COLORS.ORANGE} />
                   </Link>
+                  </div>
+                  <div className="media-icon-container">
+
                   <Link target="_blank" to={FUNDACIONJACINTOCONVIT.INSTAGRAM}>
-                    <FaSquareInstagram size="2em" color={COLORS.WHITE} />
+                    <FaInstagram size="1.8em" color={COLORS.ORANGE} />
                   </Link>
+                  </div>
+                  <div className="media-icon-container">
+
                   <Link target="_blank" to={FUNDACIONJACINTOCONVIT.LINKEDIN}>
-                    <FaLinkedin size="2em" color={COLORS.WHITE} />
+                    <FaLinkedin size="1.8em" color={COLORS.ORANGE} />
                   </Link>
+                  </div>
+                  <div className="media-icon-container">
+
                   <Link target="_blank" to={FUNDACIONJACINTOCONVIT.TWITTER}>
-                    <FaSquareXTwitter size="2em" color={COLORS.WHITE} />
+                    <FaXTwitter size="1.8em" color={COLORS.ORANGE} />
                   </Link>
-                  <Link target="_blank" to={FUNDACIONJACINTOCONVIT.YOUTUBE}>
-                    <FaSquareYoutube size="2em" color={COLORS.WHITE} />
-                  </Link>
+                  </div>
+                  <div className="media-icon-container">
+                    <Link target="_blank" to={FUNDACIONJACINTOCONVIT.YOUTUBE}>
+                      <FaYoutube size="1.8em" color={COLORS.ORANGE} />
+                    </Link>
+                  </div>
                 </Col>
               </Row>
             </Container>

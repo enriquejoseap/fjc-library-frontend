@@ -11,19 +11,20 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  
 }
 
-main{
+main {
   min-height: 100vh !important;
 }
 
-.container-box, .row.container-box{
+.container-box,
+.row.container-box {
   margin: 0;
   max-width: 100%;
 }
 
-.container-box .row, .row.container-box{
+.container-box .row,
+.row.container-box {
   max-width: 1080px;
   margin: auto;
 }
@@ -35,7 +36,12 @@ hr {
 
 /* Text */
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
 }
 
@@ -119,15 +125,15 @@ h1, h2, h3, h4, h5, h6{
 
 /* Heading */
 
-.heading-pages{
+.heading-pages {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 100% 10%;
   border-bottom: 7px solid var(--orange);
 }
 
-.heading-pages h1{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.heading-pages h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 3.5em;
   text-transform: uppercase;
   color: var(--white);
@@ -273,9 +279,17 @@ footer ul {
   padding: 0;
 }
 
-.media-icons-row svg:hover {
-  color: var(--yellow) !important;
+.media-icon-container {
+  display: inline-block;
+  background-color: var(--white);
+  border-radius: 100%;
+  padding: 4px;
+  margin-right: 4px;
 }
+
+.media-icon-container:hover{
+  background-color: var(--yellow) !important;
+} 
 
 @media screen and (max-width: 768px) {
   footer {
